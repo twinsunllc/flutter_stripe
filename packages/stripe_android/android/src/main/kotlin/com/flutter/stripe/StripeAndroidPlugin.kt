@@ -98,6 +98,10 @@ If you continue to have trouble, follow this discussion to get some support http
                     options = call.requiredArgument("options"),
                     promise = Promise(result)
             )
+            "handleCardAction" -> stripeSdk.handleNextAction(
+                    paymentIntentClientSecret = call.requiredArgument("paymentIntentClientSecret"),
+                    promise = Promise(result)
+            )
             "handleNextAction" -> stripeSdk.handleNextAction(
                     paymentIntentClientSecret = call.requiredArgument("paymentIntentClientSecret"),
                     promise = Promise(result)

@@ -72,6 +72,8 @@ class StripePlugin: StripeSdk, FlutterPlugin, ViewManagerDelegate {
             return presentApplePay(call, result: result)
         case "configure3dSecure":
             return configure3dSecure(call, result: result)
+        case "handleCardAction":
+            return handleNextAction(call, result: result)
         case "handleNextAction":
             return handleNextAction(call, result: result)
         case "confirmPayment":
